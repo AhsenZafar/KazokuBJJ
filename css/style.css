@@ -1,0 +1,12 @@
+*{
+    border: 1px solid blueviolet
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.guide{
+    display: flex;
+    list-style: none;
+}
