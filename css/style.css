@@ -1,12 +1,28 @@
-*{
-    border: 1px solid blueviolet
+body{
+    margin:0px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    font-size: 2rem;
+}
+ul{list-style: none;
+}
+li{
+    margin-bottom:0.6em;
+}
+header h1{
+    font-size: 4rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.hero{
+    background-image: url("images/logo.jpg") ;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-.guide{
-    display: flex;
-    list-style: none;
+.container{
+    width:90%;
 }
