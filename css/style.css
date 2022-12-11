@@ -19,23 +19,27 @@ li{
 .header{
     
     background-color:black;
-    color:antiquewhite
+    color:antiquewhite;
+    margin-bottom: 3em;
 }
 /* .nav{
-   
+   margin:0;
 }
 .guide{
-    
+    margin:0
 } */
 a{
     
     text-decoration: none;
     list-style: none;
     font-size: 2rem;
+    color: azure;
 }
 .header h1{
     font-size: 4rem;
     text-align: center;
+    margin:0;
+
 }
 .container{
     margin: auto;
@@ -44,18 +48,42 @@ a{
 }
 .img-container{
     width:90%;
-    border: 2px dotted black
+    margin-bottom: 2em;
+   
     
 }
 .pic{
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    border: 2px solid brown;
+    
 }
 .img-text{
     text-align: center;
     font-size: 1.5rem;
-    border: 2px solid brown;
+    margin-bottom:0.5em;
+   
 
+}
+@media only screen and (min-width: 768px) {
+    .top{
+        display:flex;
+        justify-content: space-between;
+    }
+    .title{margin-left:0;}
+    .guide{
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        padding: 0.6em;
+    }
+    
+    .content {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      /* .img-container{
+        width:25%;
+      } */
 }
