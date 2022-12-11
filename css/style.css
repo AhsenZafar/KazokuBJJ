@@ -1,6 +1,9 @@
 body{
    
-    font-family: sans-serif
+    font-family: sans-serif;
+   height: 100vh;
+   box-sizing: border-box;
+   
 }
 *{
     font:inherit;
@@ -49,6 +52,7 @@ a:hover {
     margin: auto;
     padding: 1em 1em;
     width:80%;
+    /* max-width:800px; */
 }
 .img-container{
     width:90%;
@@ -69,15 +73,27 @@ a:hover {
    
 
 }
-@media only screen and (min-width: 768px) {
+.footer{
+    font-size: 3rem;
+    background: black;
+    color:white;
+    height:100vh;
+}
+
+@media only screen and (min-width: 500px)and (max-width:999px){
     .top{
         display:flex;
+        background: brown;
         justify-content: space-between;
     }
-    .title{margin-left:0;}
+    
     .guide{
         display: flex;
         justify-content: space-between;
+    }
+    .title{
+        font-size: 1rem;
+        color: blue;
     }
     a{
         padding: 0.6em;
@@ -85,9 +101,36 @@ a:hover {
     
     .content {
         margin: 0 auto;
+        /* max-width: 1200px; */
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-      /* .img-container{
-        width:25%;
-      } */
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      
+}
+}
+
+@media only screen and (min-width: 1000px) {
+   
+    .top{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .guide{
+        display: flex;
+        justify-content: space-between;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    a{
+        padding: 0.6em;
+    }
+    
+    .content {
+        margin: 0 auto;
+        /* max-width: 1200px; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      
+}
 }
